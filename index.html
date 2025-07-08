@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PiraT Movies</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #000000;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    main {
+      flex: 1;
+      padding: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: rgb(151, 151, 151);
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(167, 167, 167, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease-in-out;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      background-color: rgb(214, 214, 214);
+
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      max-height: 300px;
+      object-fit: contain;
+    }
+
+    .card h3 {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lista de Filmes</h1>
+  </header>
+
+  <main>
+    <section class="grid">
+
+      <a href="templates/filme-nos.html">
+      <div class="card">
+        <img src="imagens/imagem1.jpg" alt="Filme Nós">
+        <h3>Nós</h3>
+      </div>
+      </a>
+
+      <a href="templates/filme-plataforma.html">
+      <div class="card">
+        <img src="imagens/imagem2.jpg" alt="Filme A Plataforma">
+        <h3>A Plataforma</h3>
+      </div>
+      </a>
+
+      <a href="templates/filme-corra.html">
+      <div class="card">
+        <img src="imagens/imagem3.jpg" alt="Filme Corra!">
+        <h3>Corra!</h3>
+      </div>
+      </a>
+
+      <a href="templates/filme-ventoLevou.html">  
+      <div class="card">
+        <img src="imagens/imagem4.jpg" alt="Filme E tudo o vento levou">
+        <h3>E tudo o vento levou</h3>
+      </div>
+      </a>
+
+      <a href="templates/filme-nadaNovoFront.html">
+      <div class="card">
+        <img src="imagens/imagem5.jpg" alt="Filme A Oeste Nada de Novo">
+        <h3>A Oeste Nada de Novo</h3>
+      </div>
+      </a>
+
+      <a href="templates/filme-chamaNome.html"> 
+      <div class="card">
+        <img src="imagens/imagem6.jpg" alt="Filme Chama-me pelo teu nome">
+        <h3>Chama-me pelo teu nome</h3>
+      </div>
+      </a>
+
+      <a href="templates/filme-corpoCai.html">
+      <div class="card">
+        <img src="imagens/imagem7.jpg" alt="Filme Um corpo que cai">
+        <h3>Um corpo que cai</h3>
+      </div>
+      </a>
+
+      <a href="templates/filme-inJonesArcaPerdida.html">
+      <div class="card">
+        <img src="imagens/imagem8.jpg" alt="Filme Indiana Jones - Os Salteadores da Arca Perdida">
+        <h3>Indiana Jones - Os Salteadores da Arca Perdida</h3>
+      </div>
+      </a>
+
+      <a href="templates/filme-titanic.html">
+      <div class="card">
+        <img src="imagens/imagem9.jpg" alt="Filme Titanic">
+        <h3>Titanic</h3>
+      </div>
+      </a>
+
+      <a href="templates/filme-missImpos.html">
+      <div class="card">
+        <img src="imagens/imagem10.jpg" alt="Filme Missão Impossível">
+        <h3>Missão Impossível</h3>
+      </div>
+      </a>
+
+      <a href="templates/filme-pirCrbPerNeg.html">
+      <div class="card">
+        <img src="imagens/imagem11.jpg" alt="Filme Piratas das Caraíbas: A Maldição do Pérola Negra">
+        <h3>Piratas das Caraíbas: A Maldição do Pérola Negra</h3>
+      </div>
+      </a>
+
+      <a href="templates/filme-belaMonstro.html">
+      <div class="card">
+        <img src="imagens/imagem12.jpg" alt="Filme A bela e o Monstro">
+        <h3>A bela e o Monstro</h3>
+      </div>
+      </a>
+
+      <a href="templates/filme-harryPedraFilos.html">
+      <div class="card">
+        <img src="imagens/imagem13.jpg" alt="Filme Harry Potter e a Pedra Filosofal">
+        <h3>Harry Potter e a Pedra Filosofal</h3>
+      </div>
+      </a>
+
+      <a href="templates/filme-avatar.html">
+      <div class="card">
+        <img src="imagens/imagem14.jpg" alt="Filme Avatar">
+        <h3>Avatar</h3>
+      </div>
+      </a>
+
+      <a href="templates/filme-matrix.html">
+      <div class="card">
+        <img src="imagens/imagem15.jpg" alt="Filme Matrix">
+        <h3>Matrix</h3>
+      </div>
+      </a>
+      <a href="templates/filme-mammaMia.html">
+      <div class="card">
+        <img src="imagens/imagem20.jpg" alt="Filme Mamma Mia!">
+        <h3>Mamma Mia!</h3>
+      </div>
+      </a>
+
+      <a href="templates/filme-mammaMia2.html">
+      <div class="card">
+        <img src="imagens/imagem16.jpg" alt="Filme Mamma Mia! Here We Go Again">
+        <h3>Mamma Mia! Here We Go Again</h3>
+      </div>
+      </a>
+
+      <a href="templates/filme-princesaSapo.html">
+      <div class="card">
+        <img src="imagens/imagem17.jpg" alt="Filme A Princesa e o Sapo">
+        <h3>A Princesa e o Sapo</h3>
+      </div>
+      </a>
+
+      <a href="templates/filme-noivaCadaver.html">
+      <div class="card">
+        <img src="imagens/imagem18.jpg" alt="Filme Noiva Cadáver">
+        <h3>Noiva Cadáver</h3>
+      </div>
+      </a>
+      <a href="templates/filme-lagoaAzul.html">
+      <div class="card">
+        <img src="imagens/imagem19.jpg" alt="Filme A Lagoa Azul">
+        <h3>A Lagoa Azul</h3>
+      </div>
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desenvolvido por Taís Lima - 2025</p>
+  </footer>
+</body>
+</html>

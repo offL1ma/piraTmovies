@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+  body {
+    background-color: #121212;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    margin-bottom: 2rem;
+  }
+
+  .video-wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  h2, h1 {
+    text-align: center;
+    color: #ffcc00;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  .back-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    background-color: #ffcc00;
+    color: #000;
+    text-decoration: none;
+    border-radius: 13px;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .back-button:hover {
+    background-color: #e6b800;
+    transform: scale(1.03);
+  }
+
+  @media (max-width: 750px) {
+  .back-button {
+    padding: 0.675rem 1.35rem;
+    border-radius: 17.55px;
+  }
+}
+
+</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Titanic</title>
+</head>
+<body>
+  <main class="container">
+    <h1>Titanic</h1>
+  <div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/IH6_CA_ocqY" title="Trailer do filme Titanic" allowfullscreen></iframe>
+  </div>
+  <h2>Sinopse</h2>
+  <p>
+    "Titanic" é um drama épico de 1997, dirigido por James Cameron e estrelado por Leonardo DiCaprio e Kate Winslet.
+        A história se passa em 1912 e segue o romance entre Jack (DiCaprio), um artista pobre, e Rose (Winslet), uma
+        jovem aristocrata. O casal se encontra a bordo do navio Titanic, que afunda depois de colidir com um iceberg.
+        Jack e Rose lutam para sobreviver em meio ao caos, e o filme é lembrado por suas impressionantes cenas de ação e
+        efeitos especiais, trilha sonora emocionante e interpretação cativante dos protagonistas. "Titanic" foi um
+        enorme sucesso de bilheteira e ganhou 11 Oscars, incluindo Melhor Filme e Melhor Diretor.
+  </p>
+
+  <a href="../index.html" class="back-button">← Voltar</a>
+</main>
+</body>
+</html>
